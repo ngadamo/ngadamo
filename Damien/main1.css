@@ -1,0 +1,126 @@
+/* Reset & Fonts */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif; /* Set default font */
+    
+    /* Set a radial gradient background */
+    background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+    
+    color: #fff; /* Set text color */
+    
+    /* Center content vertically & horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Glass Card Styling */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 30px; /* Inner spacing */
+    
+    /* Apply a box shadow for depth */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+    
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    width: 90%; /* Responsive width */
+    max-width: 700px; /* Set a max width */
+    text-align: center; /* Center align text */
+}
+
+/* Header Styling */
+header h1 {
+    font-family: 'Orbitron', sans-serif; /* Set font */
+    font-size: 3rem; /* Large font size */
+    color: #00f7ff; /* Set text color */
+    
+    /* Apply glow effect */
+    text-shadow: 0 0 8px #00f7ff;
+    
+    margin: 0; /* Remove default margin */
+}
+
+header p {
+    font-size: 1.2em; /* Set text size */
+    color: #ddd; /* Light gray text */
+    margin-top: 8px; /* Space between lines */
+}
+
+/* Budget Chooser Section */
+.budget-chooser h2 {
+    font-size: 2em; /* Larger heading */
+    margin: 30px 0 20px; /* Space around the heading */
+}
+
+/* Button Container */
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Add spacing between buttons */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Button Base Style */
+.btn {
+    padding: 15px 35px; /* Size of the button */
+    border-radius: 12px; /* Rounded edges */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-size: 1.1em; /* Set font size */
+    color: #fff; /* Text color */
+    
+    /* Position and transition effects */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease;
+    border: none; /* Remove border */
+}
+
+/* Button Hover Effect */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    
+    /* Radial gradient hover effect */
+    background: radial-gradient(circle, #fff 0%, transparent 60%);
+    opacity: 0;
+    transition: 0.4s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+/* Button Hover Animation */
+.btn:hover::before {
+    transform: scale(1);
+    opacity: 0.1;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05); /* Lift effect */
+    box-shadow: 0 0 20px rgba(255,255,255,0.4); /* Glow effect */
+}
+
+/* Neon Button Variants */
+.neon.green {
+    background: #00b894; /* Green color */
+    box-shadow: 0 0 12px #00ffbf, inset 0 0 8px #00ffbf; /* Inner & outer glow */
+}
+
+.neon.red {
+    background: #d63031; /* Red color */
+    box-shadow: 0 0 12px #ff6b6b, inset 0 0 8px #ff6b6b;
+}
+
+.neon.purple {
+    background: #6c5ce7; /* Purple color */
+    box-shadow: 0 0 12px #a29bfe, inset 0 0 8px #a29bfe;
+}

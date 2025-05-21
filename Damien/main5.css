@@ -1,0 +1,117 @@
+/* Base Styling for the Page */
+body {
+  margin: 0; /* Remove default margins */
+  font-family: 'Roboto', sans-serif; /* Set default font */
+
+  /* Background gradient for a sleek look */
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+
+  color: #ffffff; /* Set text color */
+  line-height: 1.6; /* Improve readability */
+  padding: 30px; /* Space around the content */
+}
+
+/* Header Styling */
+header {
+  text-align: center; /* Center align header text */
+  padding: 20px 10px; /* Add spacing inside header */
+}
+
+/* Main Page Title */
+h1 {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-size: 2.8rem; /* Large title */
+  margin-bottom: 10px; /* Space below the title */
+
+  /* Apply glowing effect */
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+/* Subtitle Styling */
+p.subtitle {
+  font-size: 1.1rem; /* Adjust font size */
+  color: #dddddd; /* Soft gray text */
+  margin-bottom: 30px; /* Space below subtitle */
+}
+
+/* Section Styling */
+section {
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 25px; /* Inner spacing */
+  margin-bottom: 30px; /* Space below sections */
+
+  /* Soft shadow effect */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Headings */
+h2 {
+  color: #00e6e6; /* Bright cyan color */
+  font-family: 'Orbitron', sans-serif; /* Matching futuristic font */
+  margin-bottom: 15px; /* Space below heading */
+  font-size: 1.8rem; /* Larger heading */
+}
+
+/* List Styling */
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+ul li {
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 1rem; /* Adjust text size */
+  color: #e0e0e0; /* Light gray text */
+  padding-left: 1rem; /* Space inside list item */
+  position: relative; /* Enable positioning */
+}
+
+/* Add Gaming Icon Before Each List Item */
+ul li::before {
+  content: "🎮"; /* Game controller emoji */
+  position: absolute; /* Position relative to the item */
+  left: 0; /* Align left */
+}
+
+/* User Review Section */
+.review {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  padding: 15px 20px; /* Inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between reviews */
+
+  /* Decorative border on the left */
+  border-left: 5px solid #00ffcc;
+}
+
+/* Highlight Usernames in Reviews */
+.review strong {
+  color: #00ffd5; /* Bright cyan username */
+  display: block; /* Ensure proper spacing */
+  margin-bottom: 5px; /* Space below name */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center; /* Center align text */
+  margin-top: 40px; /* Space above footer */
+  font-size: 0.9rem; /* Adjust text size */
+  color: #cccccc; /* Soft gray text */
+}
+
+/* Navigation Buttons */
+.home-btn, .info-btn {
+  text-decoration: none; /* Remove default underlining */
+  color: white; /* Set text color */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 150px; /* Adjust button padding */
+  border-radius: 8px; /* Rounded edges */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Home Button */
+.home-btn:hover {
+  background-color: #00ffcc; /* Change background color */
+  color: #000; /* Change text color */
+}
